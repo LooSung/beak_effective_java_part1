@@ -17,6 +17,7 @@ public class Settings {
 
     // Get을 하는 Instance로 만들면 다른 곳에서 사용하더라도
     // 하나의 Hashcode로 결과가 나오면서 자기 자신이 Control 할 수 있다.
+    // 다른 곳에서 Setting을 가져올 수 있지만 생성 할 순 없다.
     private static final Settings SETTINGS = new Settings();
     public static Settings getInstance() {
         return SETTINGS;
