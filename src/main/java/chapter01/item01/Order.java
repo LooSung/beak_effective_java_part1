@@ -12,6 +12,10 @@ public class Order {
 
     private OrderStatus orderStatus;
 
+    // 매서드의 Naming으로 정적으로 관리한다.
+    // 생성자를 만들어서 관리보다는 정적 팩터리 메서드를 이용해보자.
+    // public static Order(Product, product, boolean, prime) {
+    // }
     public static Order primeOrder(Product product) {
         Order order = new Order();
         order.prime = true;
