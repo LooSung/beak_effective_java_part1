@@ -1,10 +1,10 @@
 plugins {
     java
-    id("org.springframework.boot") version "3.4.0-M1"
+    id("org.springframework.boot") version "3.3.2"
     id("io.spring.dependency-management") version "1.1.6"
 }
 
-group = "kimJavaAdvanced1"
+group = "beakEffectiveJavaPart1"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -15,7 +15,6 @@ java {
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://repo.spring.io/milestone") }
 }
 
 dependencies {
@@ -24,8 +23,11 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // Lombok
-    compileOnly ("org.projectlombok:lombok:1.18.28")
-    annotationProcessor ("org.projectlombok:lombok:1.18.28")
+    // Lombok
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
+    testCompileOnly("org.projectlombok:lombok:1.18.30")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
 }
 
 tasks.withType<Test> {
