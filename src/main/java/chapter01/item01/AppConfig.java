@@ -9,7 +9,7 @@ public class AppConfig {
 
     @Bean
     public HelloService helloService() {
-        return new ChineseHelloService();
+        return null;
     }
 
 }

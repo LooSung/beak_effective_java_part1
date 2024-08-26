@@ -32,7 +32,7 @@ public class Order {
     }
 
     public static void main(String[] args) {
-
+        // Enum을 Set, Map을 사용할려면, EnumSet, EnumMap을 이용하라 가시성, 메모리, 타입안정상, 시간복잡도(메모리 효율성)을 가질 수 있다.
         Order order = new Order();
         if (order.orderStatus == OrderStatus.DELIVERED) {
             System.out.println("delivered");

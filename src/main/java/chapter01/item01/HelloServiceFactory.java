@@ -1,7 +1,5 @@
 package chapter01.item01;
 
-import me.whiteship.hello.ChineseHelloService;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Optional;
@@ -16,8 +14,8 @@ public class HelloServiceFactory {
             System.out.println(h.hello());
         });
 
-        HelloService helloService = new ChineseHelloService();
-        System.out.println(helloService.hello());
+//        HelloService helloService = new ChineseHelloService();
+//        System.out.println(helloService.hello());
 
 //        Class<?> aClass = Class.forName("me.whiteship.hello.ChineseHelloService");
 //        Constructor<?> constructor = aClass.getConstructor();
